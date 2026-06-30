@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Zully</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Italianno&family=Jost:wght@300;400;500&display=swap');
+
+  :root{
+    --rosado: #e8c2c8;
+    --vino: #6e2d3a;
+    --crema: #fbf3ee;
+    --dorado: #c9a05a;
+    --texto: #4a2a32;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background: radial-gradient(circle at 20% 10%, #f6e3e7 0%, #ecd2d8 35%, #d9aab8 100%);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 16px;
+    font-family:'Jost', sans-serif;
+  }
+
+  .card{
+    position:relative;
+    max-width:640px;
+    width:100%;
+    background: var(--crema);
+    border-radius:4px;
+    padding:56px 44px 48px;
+    box-shadow: 0 30px 60px -20px rgba(110,45,58,0.45), 0 0 0 1px rgba(201,160,90,0.25);
+    overflow:hidden;
+  }
+
+  .card::before{
+    content:"";
+    position:absolute;
+    inset:14px;
+    border:1px solid var(--dorado);
+    opacity:0.5;
+    pointer-events:none;
+  }
+
+  .corner{
+    position:absolute;
+    width:60px; height:60px;
+    border:1.5px solid var(--dorado);
+    opacity:0.7;
+  }
+  .corner.tl{top:6px; left:6px; border-right:none; border-bottom:none;}
+  .corner.br{bottom:6px; right:6px; border-left:none; border-top:none;}
+
+  .eyebrow{
+    text-align:center;
+    letter-spacing:5px;
+    font-size:11px;
+    color: var(--dorado);
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+
+  .title{
+    font-family:'Italianno', cursive;
+    text-align:center;
+    font-size:64px;
+    color: var(--vino);
+    line-height:1;
+    margin-bottom:4px;
+  }
+
+  .subtitle{
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:16px;
+    color:#8a5a64;
+    margin-bottom:30px;
+  }
+
+  .divider{
+    width:80px;
+    height:1px;
+    background:var(--dorado);
+    margin:0 auto 30px;
+    opacity:0.6;
+  }
+
+  .letter{
+    font-family:'Cormorant Garamond', serif;
+    font-size:18.5px;
+    line-height:1.85;
+    color: var(--texto);
+    text-align:left;
+  }
+
+  .letter p{
+    margin-bottom:18px;
+  }
+
+  .letter p:first-of-type::first-letter{
+    font-family:'Italianno', cursive;
+    font-size:56px;
+    color: var(--vino);
+    float:left;
+    line-height:0.65;
+    padding-right:8px;
+    padding-top:6px;
+  }
+
+  .signature{
+    margin-top:20px;
+    text-align:right;
+    font-family:'Italianno', cursive;
+    font-size:40px;
+    color: var(--vino);
+  }
+
+  .hearts{
+    text-align:center;
+    margin-top:18px;
+    color: var(--dorado);
+    font-size:18px;
+    letter-spacing:10px;
+  }
+
+  @media (max-width:480px){
+    .card{padding:40px 24px 36px;}
+    .title{font-size:48px;}
+    .letter{font-size:16.5px;}
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="corner tl"></div>
+    <div class="corner br"></div>
+    <div class="eyebrow">Para mi amor</div>
+    <div class="title">Zuleyka</div>
+    <div class="subtitle">mi reina, mi princesa, mi vida</div>
+    <div class="divider"></div>
+
+    <div class="letter">
+      <p>Buenas noches, mi amor. ❤️ Ya estoy de regreso, pero siento que una parte de mí se quedó contigo en Paita. Estos días fueron de los más especiales que he vivido. Verte sonreír, celebrar tu cumpleaños a tu lado, conocer más a tu familia, abrazarte, besarte, decirnos "te amo" mirándonos a los ojos y compartir momentos tan íntimos contigo hizo que me enamorara todavía más de ti.</p>
+
+      <p>No sabes lo feliz que me hace poder llamarte mi novia. Eres una mujer increíble, hermosa, cariñosa y haces que cada segundo contigo valga completamente la pena. Gracias por hacerme sentir tan querido y por abrirme un espacio tan importante en tu vida.</p>
+
+      <p>Ahora que estamos lejos otra vez, ya extraño tus abrazos, tus besitos, tu voz y hasta esa forma en la que me miras. Confieso que también extraño tenerte cerquita de mí y poder robarte esos momentos que solo tú y yo entendemos. Ya cuento los días para volver a verte y perderme otra vez entre tus brazos.</p>
+
+      <p>Quiero que nunca dudes de lo mucho que te amo. Voy a seguir esforzándome para hacerte feliz, cuidarte y construir un futuro bonito contigo. Gracias por regalarme recuerdos que voy a llevar siempre en mi corazón.</p>
+
+      <p>Descansa, mi reina hermosa, mi princesa, mi vida, mi amor, mi cielo. Sueña bonito y, si aparezco en tus sueños, prométeme que me vas a abrazar tan fuerte como yo quisiera abrazarte ahora mismo.</p>
+
+      <p>Te amo con todo mi corazón, Zuleyka. Buenas noches, mi niña preciosa. ❤️🌙</p>
+    </div>
+
+    <div class="signature">Con todo mi corazón</div>
+    <div class="hearts">❤ ❤ ❤</div>
+  </div>
+</body>
+</html>
